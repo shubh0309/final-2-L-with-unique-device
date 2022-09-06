@@ -1,0 +1,567 @@
+{
+  "id" : "62f1080a30c49e0001d74a4e",
+  "modified" : 1660021788,
+  "name" : "Test",
+  "dataDefinition" : {
+    "id" : "62c28b4530c49e0007219e6e",
+    "modified" : 1660015573,
+    "name" : "DDUDFManual",
+    "schema" : {
+      "metadata" : {
+        "type" : "json"
+      },
+      "type" : "object",
+      "properties" : {
+        "Context" : {
+          "properties" : {
+            "UDFVersion" : {
+              "type" : "string",
+              "metadata" : {
+                "position" : "UDFVersion",
+                "name" : "UDFVersion",
+                "description" : ""
+              }
+            },
+            "Type" : {
+              "type" : "string",
+              "metadata" : {
+                "position" : "Type",
+                "name" : "Type",
+                "description" : ""
+              }
+            },
+            "StartDateTime" : {
+              "type" : "string",
+              "metadata" : {
+                "position" : "StartDateTime",
+                "name" : "StartDateTime",
+                "description" : "StartDateTime"
+              }
+            },
+            "DATA" : {
+              "items" : [ {
+                "properties" : {
+                  "UniqueID" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "UniqueID",
+                      "name" : "UniqueID",
+                      "description" : ""
+                    }
+                  }
+                },
+                "type" : "object",
+                "metadata" : {
+                  "position" : "1",
+                  "description" : ""
+                }
+              } ],
+              "type" : "array",
+              "metadata" : {
+                "position" : "DATA",
+                "description" : ""
+              }
+            },
+            "Device" : {
+              "type" : "string",
+              "metadata" : {
+                "position" : "Device",
+                "name" : "Device",
+                "description" : "Device"
+              }
+            }
+          },
+          "type" : "object",
+          "metadata" : {
+            "position" : "Context",
+            "description" : ""
+          }
+        },
+        "FieldSensorData" : {
+          "properties" : {
+            "DATA" : {
+              "items" : [ {
+                "properties" : {
+                  "UniqueID" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "UniqueID",
+                      "name" : "UniqueID",
+                      "description" : ""
+                    }
+                  },
+                  "SensorType" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "SensorType",
+                      "name" : "SensorType",
+                      "description" : ""
+                    }
+                  },
+                  "SensorChannel" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "SensorChannel",
+                      "name" : "SensorChannel",
+                      "description" : ""
+                    }
+                  },
+                  "Mode" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "Mode",
+                      "name" : "Mode",
+                      "description" : ""
+                    }
+                  },
+                  "DateTimeOffset" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "DateTimeOffset",
+                      "name" : "DateTimeOffset",
+                      "description" : ""
+                    }
+                  },
+                  "Unit" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "Unit",
+                      "name" : "Unit",
+                      "description" : ""
+                    }
+                  },
+                  "Sensor" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "Sensor",
+                      "name" : "Sensor",
+                      "description" : ""
+                    }
+                  },
+                  "UCL" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "UCL",
+                      "name" : "UCL",
+                      "description" : ""
+                    }
+                  },
+                  "Name" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "Name",
+                      "name" : "Name",
+                      "description" : ""
+                    }
+                  },
+                  "Result" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "Result",
+                      "name" : "Result",
+                      "description" : ""
+                    }
+                  },
+                  "Fail" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "Fail",
+                      "name" : "Fail",
+                      "description" : ""
+                    }
+                  }
+                },
+                "type" : "object",
+                "metadata" : {
+                  "position" : "1",
+                  "description" : ""
+                }
+              }, {
+                "properties" : {
+                  "Mode" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "Mode",
+                      "name" : "Mode",
+                      "description" : ""
+                    }
+                  }
+                },
+                "type" : "object",
+                "metadata" : {
+                  "position" : "2",
+                  "description" : ""
+                }
+              } ],
+              "type" : "array",
+              "metadata" : {
+                "position" : "DATA",
+                "description" : ""
+              }
+            }
+          },
+          "type" : "object",
+          "metadata" : {
+            "position" : "FieldSensorData",
+            "description" : ""
+          }
+        },
+        "Time" : {
+          "type" : "string",
+          "metadata" : {
+            "position" : "Time",
+            "name" : "Time",
+            "description" : ""
+          }
+        }
+      },
+      "schemaKey" : "http://json-schema.org/draft-04/schema#"
+    }
+  },
+  "timer" : {
+    "type" : "interval",
+    "metric" : "seconds",
+    "value" : 1
+  },
+  "ticksNumber" : 0,
+  "isReplayLooped" : false,
+  "devices" : [ {
+    "id" : "62f1077b30c49e0001d74a4d",
+    "modified" : 1659963449,
+    "name" : "D5",
+    "targetSystems" : [ {
+      "id" : "62c2b5684e127a636e3b07ad",
+      "modified" : 0,
+      "name" : "UDFD4",
+      "type" : "dummy"
+    } ],
+    "properties" : [ {
+      "name" : "UniqueID",
+      "value" : "Dev1"
+    } ]
+  } ],
+  "deviceInjector" : {
+    "rule" : "round_robin"
+  },
+  "generator" : {
+    "type" : "schema_based",
+    "schema" : {
+      "metadata" : {
+        "type" : "json"
+      },
+      "type" : "object",
+      "properties" : {
+        "Context" : {
+          "rule" : {
+            "type" : "device_property",
+            "propertyName" : "UniqueID"
+          },
+          "type" : "object",
+          "metadata" : {
+            "position" : "Context",
+            "description" : ""
+          },
+          "properties" : {
+            "UDFVersion" : {
+              "type" : "string",
+              "metadata" : {
+                "position" : "UDFVersion",
+                "name" : "UDFVersion",
+                "description" : ""
+              },
+              "rule" : {
+                "type" : "literal_string",
+                "value" : "1"
+              }
+            },
+            "Type" : {
+              "type" : "string",
+              "metadata" : {
+                "position" : "Type",
+                "name" : "Type",
+                "description" : ""
+              },
+              "rule" : {
+                "type" : "literal_string",
+                "value" : "Temp"
+              }
+            },
+            "StartDateTime" : {
+              "type" : "string",
+              "metadata" : {
+                "position" : "StartDateTime",
+                "name" : "StartDateTime",
+                "description" : "StartDateTime"
+              },
+              "rule" : {
+                "type" : "literal_string",
+                "value" : "23.09.2021"
+              }
+            },
+            "DATA" : {
+              "rule" : {
+                "type" : "device_property",
+                "propertyName" : "UniqueID"
+              },
+              "type" : "array",
+              "metadata" : {
+                "position" : "DATA",
+                "description" : ""
+              },
+              "items" : [ {
+                "rule" : {
+                  "type" : "device_property",
+                  "propertyName" : "UniqueID"
+                },
+                "type" : "object",
+                "metadata" : {
+                  "position" : "1",
+                  "description" : ""
+                },
+                "properties" : {
+                  "UniqueID" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "UniqueID",
+                      "name" : "UniqueID",
+                      "description" : ""
+                    },
+                    "rule" : {
+                      "type" : "device_property",
+                      "propertyName" : "UniqueID"
+                    }
+                  }
+                }
+              } ]
+            },
+            "Device" : {
+              "type" : "string",
+              "metadata" : {
+                "position" : "Device",
+                "name" : "Device",
+                "description" : "Device"
+              },
+              "rule" : {
+                "type" : "device_property",
+                "propertyName" : "UniqueID"
+              }
+            }
+          }
+        },
+        "FieldSensorData" : {
+          "rule" : {
+            "type" : "device_property",
+            "propertyName" : "UniqueID"
+          },
+          "type" : "object",
+          "metadata" : {
+            "position" : "FieldSensorData",
+            "description" : ""
+          },
+          "properties" : {
+            "DATA" : {
+              "rule" : {
+                "type" : "device_property",
+                "propertyName" : "UniqueID"
+              },
+              "type" : "array",
+              "metadata" : {
+                "position" : "DATA",
+                "description" : ""
+              },
+              "items" : [ {
+                "rule" : {
+                  "type" : "device_property",
+                  "propertyName" : "UniqueID"
+                },
+                "type" : "object",
+                "metadata" : {
+                  "position" : "1",
+                  "description" : ""
+                },
+                "properties" : {
+                  "UniqueID" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "UniqueID",
+                      "name" : "UniqueID",
+                      "description" : ""
+                    },
+                    "rule" : {
+                      "type" : "literal_string",
+                      "value" : "1"
+                    }
+                  },
+                  "SensorType" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "SensorType",
+                      "name" : "SensorType",
+                      "description" : ""
+                    },
+                    "rule" : {
+                      "type" : "literal_string",
+                      "value" : "Temp"
+                    }
+                  },
+                  "SensorChannel" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "SensorChannel",
+                      "name" : "SensorChannel",
+                      "description" : ""
+                    },
+                    "rule" : {
+                      "type" : "literal_string",
+                      "value" : "CORETS0"
+                    }
+                  },
+                  "Mode" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "Mode",
+                      "name" : "Mode",
+                      "description" : ""
+                    },
+                    "rule" : {
+                      "type" : "literal_string",
+                      "value" : "1"
+                    }
+                  },
+                  "DateTimeOffset" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "DateTimeOffset",
+                      "name" : "DateTimeOffset",
+                      "description" : ""
+                    },
+                    "rule" : {
+                      "type" : "literal_string",
+                      "value" : "1000"
+                    }
+                  },
+                  "Unit" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "Unit",
+                      "name" : "Unit",
+                      "description" : ""
+                    },
+                    "rule" : {
+                      "type" : "literal_string",
+                      "value" : "degC"
+                    }
+                  },
+                  "Sensor" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "Sensor",
+                      "name" : "Sensor",
+                      "description" : ""
+                    },
+                    "rule" : {
+                      "type" : "literal_string",
+                      "value" : "Tmon"
+                    }
+                  },
+                  "UCL" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "UCL",
+                      "name" : "UCL",
+                      "description" : ""
+                    },
+                    "rule" : {
+                      "type" : "literal_string",
+                      "value" : "65"
+                    }
+                  },
+                  "Name" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "Name",
+                      "name" : "Name",
+                      "description" : ""
+                    },
+                    "rule" : {
+                      "type" : "literal_string",
+                      "value" : "TempS"
+                    }
+                  },
+                  "Result" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "Result",
+                      "name" : "Result",
+                      "description" : ""
+                    },
+                    "rule" : {
+                      "type" : "custom_function",
+                      "function" : "\n/**\n * \n * Please, note the following information:\n * - to print information to docker console use \"print\" (console.log is not available)\n * - \"momentjs\" and \"lodash\" libraries are supported and available in global scope\n * \n * @param  {object} ruleState may be used to store information between iterations\n * @param  {object} sessionState may be used to store information between rules\n * @param  {string} deviceName device name\n * @return {string} value that will be populated to specified property\n */\nfunction custom(ruleState, sessionState, deviceName) { \n    var result=\"\";\n     result+=parseFloat((Math.random() * (80.9 - 20.8 + 1) + 20.8).toString()).toFixed(2);\n    return result; \n\n}\n"
+                    }
+                  },
+                  "Fail" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "Fail",
+                      "name" : "Fail",
+                      "description" : ""
+                    },
+                    "rule" : {
+                      "type" : "literal_string",
+                      "value" : "1"
+                    }
+                  }
+                }
+              }, {
+                "rule" : {
+                  "type" : "device_property",
+                  "propertyName" : "UniqueID"
+                },
+                "type" : "object",
+                "metadata" : {
+                  "position" : "2",
+                  "description" : ""
+                },
+                "properties" : {
+                  "Mode" : {
+                    "type" : "string",
+                    "metadata" : {
+                      "position" : "Mode",
+                      "name" : "Mode",
+                      "description" : ""
+                    },
+                    "rule" : {
+                      "type" : "literal_string",
+                      "value" : "Channel1"
+                    }
+                  }
+                }
+              } ]
+            }
+          }
+        },
+        "Time" : {
+          "type" : "string",
+          "metadata" : {
+            "position" : "Time",
+            "name" : "Time",
+            "description" : ""
+          },
+          "rule" : {
+            "type" : "custom_function",
+            "function" : "\n/**\n * \n * Please, note the following information:\n * - to print information to docker console use \"print\" (console.log is not available)\n * - \"momentjs\" and \"lodash\" libraries are supported and available in global scope\n * \n * @param  {object} ruleState may be used to store information between iterations\n * @param  {object} sessionState may be used to store information between rules\n * @param  {string} deviceName device name\n * @return {string} value that will be populated to specified property\n */\nfunction custom(ruleState, sessionState, deviceName) { \n  var CurrentDate = moment().format();\n    return CurrentDate;\n}\n"
+          }
+        }
+      },
+      "schemaKey" : "http://json-schema.org/draft-04/schema#"
+    }
+  },
+  "targetSystem" : {
+    "id" : "62bd175c717aad1f392eff01",
+    "modified" : 1659680079,
+    "name" : "UDF",
+    "type" : "dummy"
+  },
+  "replayLooped" : false
+}
